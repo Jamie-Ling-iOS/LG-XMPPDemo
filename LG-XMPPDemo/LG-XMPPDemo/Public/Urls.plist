@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LG_NETWORK_ENVIRONMENT</key>
+	<string>produce</string>
+	<key>Debug</key>
+	<true/>
+	<key>RequestTimeOutSeconds</key>
+	<integer>30</integer>
+	<key>K_API_KEY</key>
+	<dict>
+		<key>produce</key>
+		<string></string>
+		<key>stg</key>
+		<string></string>
+		<key>local</key>
+		<string></string>
+	</dict>
+	<key>K_REGISTER_KEY</key>
+	<dict>
+		<key>produce</key>
+		<string></string>
+		<key>stg</key>
+		<string></string>
+		<key>local</key>
+		<string></string>
+	</dict>
+	<key>serverAddress</key>
+	<dict/>
+	<key>serverInterface</key>
+	<dict/>
+</dict>
+</plist>

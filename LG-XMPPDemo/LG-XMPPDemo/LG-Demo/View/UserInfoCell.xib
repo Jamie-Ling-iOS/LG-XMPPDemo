@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserInfoCell" rowHeight="188" id="6jC-aP-yVd" customClass="UserInfoCell" customModule="JD_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6jC-aP-yVd" id="W2y-De-yMc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TJX-74-vgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="TJX-74-vgQ" secondAttribute="height" id="exN-DO-ydd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="exN-DO-ydd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="exN-DO-ydd"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ny-bu-B4J">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbA-uN-tro">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0ny-bu-B4J" firstAttribute="top" secondItem="W2y-De-yMc" secondAttribute="topMargin" id="2Y4-ul-No5"/>
+                    <constraint firstItem="TJX-74-vgQ" firstAttribute="top" secondItem="W2y-De-yMc" secondAttribute="topMargin" id="3Hb-Ue-bmp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TJX-74-vgQ" secondAttribute="bottom" id="6Kd-sF-WaV"/>
+                    <constraint firstItem="zbA-uN-tro" firstAttribute="height" secondItem="0ny-bu-B4J" secondAttribute="height" id="PLc-zj-SZp"/>
+                    <constraint firstItem="TJX-74-vgQ" firstAttribute="leading" secondItem="W2y-De-yMc" secondAttribute="leadingMargin" constant="10" id="Uzo-a8-IZy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0ny-bu-B4J" secondAttribute="trailing" constant="100" id="b8I-8s-o4J">
+                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                    </constraint>
+                    <constraint firstItem="0ny-bu-B4J" firstAttribute="leading" secondItem="TJX-74-vgQ" secondAttribute="trailing" constant="10" id="e6t-HL-xnk"/>
+                    <constraint firstItem="zbA-uN-tro" firstAttribute="top" secondItem="0ny-bu-B4J" secondAttribute="bottom" id="eeh-dk-SYs"/>
+                    <constraint firstItem="0ny-bu-B4J" firstAttribute="height" secondItem="TJX-74-vgQ" secondAttribute="height" multiplier="1:2" id="j2q-nr-WK5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zbA-uN-tro" secondAttribute="trailing" constant="100" id="kgh-I2-lQf"/>
+                    <constraint firstItem="zbA-uN-tro" firstAttribute="leading" secondItem="TJX-74-vgQ" secondAttribute="trailing" constant="10" id="sKB-wj-LYV"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="TJX-74-vgQ"/>
+                        <exclude reference="0ny-bu-B4J"/>
+                        <exclude reference="zbA-uN-tro"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="2Y4-ul-No5"/>
+                        <exclude reference="b8I-8s-o4J"/>
+                        <exclude reference="e6t-HL-xnk"/>
+                        <exclude reference="j2q-nr-WK5"/>
+                        <exclude reference="PLc-zj-SZp"/>
+                        <exclude reference="eeh-dk-SYs"/>
+                        <exclude reference="kgh-I2-lQf"/>
+                        <exclude reference="sKB-wj-LYV"/>
+                        <exclude reference="3Hb-Ue-bmp"/>
+                        <exclude reference="6Kd-sF-WaV"/>
+                        <exclude reference="Uzo-a8-IZy"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="TJX-74-vgQ"/>
+                        <include reference="0ny-bu-B4J"/>
+                        <include reference="zbA-uN-tro"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="2Y4-ul-No5"/>
+                        <include reference="b8I-8s-o4J"/>
+                        <include reference="e6t-HL-xnk"/>
+                        <include reference="j2q-nr-WK5"/>
+                        <include reference="PLc-zj-SZp"/>
+                        <include reference="eeh-dk-SYs"/>
+                        <include reference="kgh-I2-lQf"/>
+                        <include reference="sKB-wj-LYV"/>
+                        <include reference="3Hb-Ue-bmp"/>
+                        <include reference="6Kd-sF-WaV"/>
+                        <include reference="Uzo-a8-IZy"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_headImageView" destination="TJX-74-vgQ" id="Rfe-L7-y9U"/>
+                <outlet property="_nameLabel" destination="0ny-bu-B4J" id="RNm-y6-2mB"/>
+                <outlet property="_signatureLabel" destination="zbA-uN-tro" id="dWE-49-hsX"/>
+            </connections>
+            <point key="canvasLocation" x="545" y="308.5"/>
+        </tableViewCell>
+    </objects>
+</document>
